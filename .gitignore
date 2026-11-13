@@ -1,0 +1,41 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+# Jekyll build & cache files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby & Bundler dependencies
+.bundle/
+vendor/
+
+# Node.js / Asset pipeline (optional, if using Tailwind, PostCSS, etc.)
+node_modules/
+
+# Environment & local secrets
+.env
+.env.local
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux system files
+*~
+
+# Code editors & IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
