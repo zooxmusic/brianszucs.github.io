@@ -41,7 +41,7 @@ p {
 
 .wrapper {
   background: #1F3B61;
-  max-width: 960px;
+  max-width: 1020px;
   margin: 0 auto;
   position: relative;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -155,7 +155,7 @@ p {
 .main-wrapper {
   background: #fff;
   padding: 60px;
-  padding-right: 300px;
+  padding-right: 360px;
 }
 .main-wrapper .section-title {
   text-transform: uppercase;
@@ -312,4 +312,26 @@ p {
 .max-w-5xl {
   width:1024px;
   height: 56px;
+}
+.site-nav {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 24px 0 8px;
+  text-align: right;
+}
+.nav-tab {
+  background: none;
+  border: 0;
+  padding: 0 8px;
+  font: inherit;
+  font-weight: 500;
+  color: #2e4049;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav-tab:hover {
+  text-decoration: underline;
+}
+.nav-sep {
+  color: #97AAC3;
 }

@@ -1,9 +1,14 @@
-<img src="assets/meditation-superpower.jpeg" width="720" height="402"/>
+---
+layout: post
+title:  "Meditation: The Superpower You didn't Know You Had"
+date:   2021-11-17s 07:09:13 -0500
+categories: meditation 
+author:  Brian szucs
+---
+
+<img src="{{ '/assets/images/meditation-superpower.jpeg' }}" width="720" height="402"/>
 
 # Meditation: The Superpower You Didn’t Know You Had
----
-Brian Szucs: Senior Backend Java Developer | Java/Spring + Spring AI| Modernizing legacy systems across regulated industries | Writing o
----
 
 
 A lot of people hear meditation and picture someone surrounded by healing crystals, burning incense, or flipping tarot cards. But strip away the stereotypes, and what are you left with?
@@ -35,3 +40,8 @@ All it takes is a half-hour a day toward a completely better you.
 
 #meditation #focus #problemsolving #deepwork #inthezone #neuroscience #growth
 
+
+---
+Brian Szucs: Senior Backend Java Developer | Java/Spring + Spring AI| Modernizing legacy systems across regulated industries | Writing o
+---
+#meditation
