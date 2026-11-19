@@ -23,28 +23,43 @@
 
 
 
-title: Brian Szucs Resume Site
+title: All Things Brian Szucs
 email: brian@zooxmusic.com
 description: >- # this means to ignore newlines until "baseurl:"
- Seasoned Full Stack Java Developer with over 26 years of experience in Java 4 to 24, Staunch believer in true Test Driven Development (TDD),  Domain Driven Design, AI, ML, OOP/OOD, Spring Boot, React.js, AWS, and Microservices architecture. Proven track record in designing scalable, high-performance applications with a deep focus on API design, cloud infrastructure, Swagger documentation, and data modeling. Passionate about Agile, TDD, mentoring, and delivering elegant, maintainable software systems.
+ Seasoned Full Stack Java Developer with over 26 years of experience in Java 4 to 24, Staunch believer in true Test Driven Development (TDD),  
+ Domain Driven Design, AI, ML, OOP/OOD, Spring Boot, React.js, AWS, and Microservices architecture. 
+ Proven track record in designing scalable, high-performance applications with a deep focus on API design, cloud infrastructure, 
+ Swagger documentation, and data modeling. Passionate about Agile, TDD, mentoring, and delivering elegant, maintainable software systems.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://brianszucs.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: zooxmusic
+github_username:  zooxmusic
+
 
 # Build settings
-theme: minima
+theme: jekyll-theme-modernist
+
 plugins:
   - jekyll-feed
 
 
+gem 'jekyll-admin', group: :jekyll_plugins 
 
+#gem "github-pages", group: :jekyll_plugins
 
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
 
 collections:
-  authors:
+  articles:
     output: true
+    permalink: /articles/:name/
+    
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

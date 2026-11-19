@@ -22,9 +22,9 @@ $heart: #fb866a;
 
 //*************************** Theme Styles ****************************/
 // Import theme styles
-@import "theme/mixins";
-@import "theme/base";
-@import "theme/responsive";
+@use "theme/mixins";
+@use "theme/base";
+@use "theme/responsive";
 
 
 

@@ -9,14 +9,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <meta name="description" content="Senior Backend Java Engineer / AI/Agentic">
     <link rel="shortcut icon" href="favicon.ico">  
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap";img[src$="/files/uploads/5mvwtq0ug2/5mvwtq0ug2_1794364397418_file_Ru_JHINBqS.jpg?sig=az94ld1VXG0r_zgzwvCyiwbEgk56QYnjumD_S2dlhVk&exp=1794455598"  rel="stylesheet" type="text/css">
+    <link href="https://googleapis.com" rel="stylesheet" type="text/css">
 
     <!-- FontAwesome JS-->
-	<script defer src="assets/fontawesome/js/all.min.js"></script>
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
     <!-- Theme CSS -->  
@@ -32,156 +31,122 @@
         </nav>
     </header>
     <div class="wrapper mt-lg-5">
-       {% include sidebar.html %}
+        {% include sidebar.html %}
         <div class="main-wrapper">
             <div id="resume">
             
+            {% assign profile = site.data.data.career-profile %}
+            {% if profile %}
             <section class="section summary-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-user"></i></span>Career Profile</h2>
+                <h2 class="section-title">
+                    <span class="icon-holder"><i class="fa-solid fa-user"></i></span>{{ profile.title }}
+                </h2>
                 <div class="summary">
-                    <p>Seasoned Backend Engineer with over 26 years of experience in Java 4 to 24, Staunch believer in true Test Driven Development (TDD),  
-                        Domain Driven Design, AI, ML, OOP/OOD, Spring Boot, React.js, AWS, and Microservices architecture. Proven track record in designing 
-                        scalable, high-performance applications with a deep focus on API design, cloud infrastructure, Swagger documentation, and data modeling. 
-                        Passionate about Agile, TDD, mentoring, and delivering elegant, maintainable software systems.</p>
-                </div><!--//summary-->
-            </section><!--//section-->
+                    {{ profile.summary | markdownify }}
+                </div>
+            </section>
+            {% endif %}
             
+            {% assign experiences = site.data.data.experiences %}
+            {% if experiences %}
             <section class="section experiences-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span>Experiences</h2>
+                <h2 class="section-title">
+                    <span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span>Professional Experiences
+                </h2>
                 
+                {% for experience in experiences %}
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title">Lead Developer</h3>
-                            <div class="time">2023 - Present</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Startup Hubs, San Francisco</div>
-                    </div><!--//meta-->
+                            <h3 class="job-title">{{ experience.role }}</h3>
+                            <div class="time">{{ experience.time }}</div>
+                        </div>
+                        <div class="company">{{ experience.company }}</div>
+                    </div>
+                    {% if experience.details %}
                     <div class="details">
-                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>  
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Senior Software Engineer</h3>
-                            <div class="time">2018 - 2023</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Google, London</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>  
-                        
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">UI Developer</h3>
-                            <div class="time">2016 - 2018</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Amazon, London</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>  
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-            </section><!--//section-->
+                        {{ experience.details | markdownify }}
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </section>
+            {% endif %}
             
+            {% assign projects = site.data.data.projects %}
+            {% if projects %}
             <section class="section projects-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-archive"></i></span>Projects</h2>
+                <h2 class="section-title">
+                    <span class="icon-holder"><i class="fa-solid fa-archive"></i></span>{{ projects.title }}
+                </h2>
+                {% if projects.intro %}
                 <div class="intro">
-                    <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
-                </div><!--//intro-->
+                    {{ projects.intro | markdownify }}
+                </div>
+                {% endif %}
+                {% for assignment in projects.assignments %}
                 <div class="item">
-                    <span class="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-5-startup-template-for-software-projects/" target="_blank">CoderPro</a></span> - <span class="project-tagline">A responsive website template designed to help developers launch their software projects. </span>
-                    
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-5-template-for-saas-businesses/" target="_blank">Launch</a></span> - <span class="project-tagline">A responsive website template designed to help startups promote their products or services.</span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-5-vcard-portfolio-template-for-software-developers/" target="_blank">DevCard</a></span> - <span class="project-tagline">A portfolio website template designed for software developers.</span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">Nova Pro</a></span> - <span class="project-tagline">A responsive Bootstrap theme designed to help app developers promote their mobile apps</span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank">DevStudio</a></span> - 
-                    <span class="project-tagline">A responsive website template designed to help web developers/designers market their services. </span>
-                </div><!--//item-->
-            </section><!--//section-->
+                    <span class="project-title">
+                        {% if assignment.link %}
+                        <a href="{{ assignment.link }}" target="_blank">{{ assignment.title }}</a>
+                        {% else %}
+                        {{ assignment.title }}
+                        {% endif %}
+                    </span>
+                    {% if assignment.tagline %}
+                    - <span class="project-tagline">{{ assignment.tagline }}</span>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </section>
+            {% endif %}
             
+            {% assign skills = site.data.data.skills %}
+            {% if skills %}
             <section class="skills-section section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-rocket"></i></span>Skills &amp; Proficiency</h2>
-                <div class="skillset">        
+                <h2 class="section-title">
+                    <span class="icon-holder"><i class="fa-solid fa-rocket"></i></span>{{ skills.title }}
+                </h2>
+                <div class="skillset">
+                    {% for skill in skills.toolset %}
                     <div class="item">
-                        <h3 class="level-title">Python &amp; Django</h3>
+                        <h3 class="level-title">{{ skill.name }}</h3>
                         <div class="progress level-bar">
-						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
-						</div>                               
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Javascript</h3>
-                        <div class="progress level-bar">
-						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-						</div>                              
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">React &amp; Angular</h3>
-                        <div class="progress level-bar">
-						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-						</div>                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">HTML5 &amp; CSS</h3>
-                        <div class="progress level-bar">
-							    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-						</div>                                
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Ruby on Rails</h3>
-                        <div class="progress level-bar">
-						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-						</div>                                  
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Sketch &amp; Photoshop</h3>
-                        <div class="progress level-bar">
-						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-						</div>                                 
-                    </div><!--//item-->
-                    
-                </div>  
-            </section><!--//skills-section-->
+                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.level | remove: '%' }}" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            {% endif %}
             
             </div><!--//resume-->
-                <div id="articles" hidden>
+            <div id="articles" hidden>
                 <section class="section articles-section">
-                    <h2 class="section-title">Articles</h2>
-                    {% for post in site.posts %}
-                    <article class="mb-4">
-                        {% if post.image %}
-                        <a href="{{ post.url | relative_url }}">
-                            <img class="img-fluid mb-2" src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}">
+                    <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-pen-nib"></i></span>Articles</h2>
+                    {% assign sorted_articles = site.articles | sort: 'date' | reverse %}
+                    {% for article in sorted_articles %}
+                    <article class="item d-flex align-items-start mb-4 pb-3 border-bottom">
+                        {% if article.image %}
+                        <a href="{{ article.url | relative_url }}" class="me-3 flex-shrink-0">
+                            <img src="{{ article.image | relative_url }}" alt="{{ article.title | escape }}" style="width: 110px; height: 80px; object-fit: cover; border-radius: 6px;">
                         </a>
                         {% endif %}
-                        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-                        <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+                        <div>
+                            <h3 class="job-title mb-1">
+                                <a href="{{ article.url | relative_url }}">{{ article.title }}</a>
+                            </h3>
+                            {% if article.date %}
+                            <div class="time mb-1">{{ article.date | date: "%B %-d, %Y" }}</div>
+                            {% endif %}
+                            <p class="mb-0">{{ article.excerpt | strip_html | truncate: 180 }}</p>
+                        </div>
                     </article>
                     {% endfor %}
                 </section>
             </div><!--//articles-->
-        </div><!--//main-body-->
+
+        </div><!--//main-wrapper-->
     </div>
  
     <footer class="footer">
@@ -195,10 +160,9 @@
         const panels = document.querySelectorAll('#resume, #articles');
         document.querySelectorAll('.nav-tab').forEach(tab => {
             tab.addEventListener('click', () => {
-            panels.forEach(p => p.hidden = p.id !== tab.dataset.target);
+                panels.forEach(p => p.hidden = p.id !== tab.dataset.target);
+            });
         });
-  });
-</script>
+    </script>
 </body>
-</html> 
-
+</html>

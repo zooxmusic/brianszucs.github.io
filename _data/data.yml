@@ -1,0 +1,175 @@
+sidebar:
+    about: false
+    education: true
+
+    name: Brian Szucs
+    tagline: Senior Backend Java Engineer / AI/Agentic
+    avatar: profile.png
+
+    email: brian@zooxmusic.com
+    phone: (615) 552-8987
+    website: 
+    linkedin: brianszucs
+    github: zooxmusic
+    twitter: 
+    stack-overflow: 
+    codewars: 
+    goodreads: 
+
+    languages:
+      - idiom: English
+        level: Native
+
+    interests:
+      - item: Guitar
+        link:
+      - item: Meditation
+        link:
+      - item: Physical Endurance
+        link:
+      - item: Astrophysics / Physics
+        link:
+
+    education:
+      - degree: Computer Information Systems (2 Semesters)
+        university: DeVry University, Phoenix
+        time: 1995 - 1997
+      - degree: GED
+        university: 
+        time: 
+      - degree: School of Hard Knocks
+        university: Earth University
+        time: 1976 - Current
+
+career-profile:
+    title: Professional Summary
+    summary: |
+      Seasoned Full Stack Java Developer with over 26 years of experience in Java 4 to 24. Staunch believer in true Test Driven Development (TDD), Domain Driven Design, AI, ML, OOP/OOD, Spring Boot, React.js, AWS, and Microservices architecture. Proven track record in designing scalable, high-performance applications with a deep focus on API design, cloud infrastructure, Swagger documentation, and data modeling. Passionate about Agile, TDD, mentoring, and delivering elegant, maintainable software systems.
+
+experiences:
+    - role: Senior Backend Java Engineer (Contract)
+      time: April 2025 - Present
+      company: TD Securities, Remote
+      details: |
+        - Lead backend development for event-driven payments using Java 17, Spring Boot 2, Apache Kafka, IBM MQ, and ISO 20022 messaging.
+        - Designed messaging pipelines as well as RDBMS schemas and tables.
+        - Consistently began with failing tests (TDD) for all tasks.
+        - Built containerized local dev environments using Docker and Embedded Kafka.
+        - Served as a primary pull-request reviewer and approver for much of the engagement.
+        - Frequently worked through overlapping changes on shared Git branches, using cherry-picking and branch separation to manage conflicting development work.
+        - Emphasized clear, actionable tickets and disciplined backlog grooming to reduce ambiguity during development.
+
+    - role: Independent Engineering Project — Life in TOON (Multi-Agent AI Application)
+      time: 2025 - Present
+      company: Zooxmusic LLC, Remote
+      details: |
+        - Began every use case with failing tests (TDD) for each and every task.
+        - Designing and developing a multi-agent AI application using Java 24, Spring AI, PostgreSQL, Neo4j, and domain-driven design principles.
+        - Designing and developing a multi-provider agentic AI platform using Java and Spring AI, integrating OpenAI, Anthropic Claude, Google Gemini, and locally hosted Ollama models.
+        - Created approximately 25 specialized AI agent definitions with distinct responsibilities, personas, and behavioral instructions, coordinating them into orchestration patterns.
+        - Created, maintained, and continuously update the README.md.
+        - Building an architecture supporting multiple LLM providers, structured domain knowledge, and contextual retrieval.
+        - Integrating gRPC communication between a command-line interface, a web interface using Vaadin, and backend services.
+        - Exploring agent orchestration, prompt engineering, and retrieval-augmented generation (RAG).
+
+    - role: Lead Software Engineer
+      time: July 2024 - March 2025
+      company: Build.com (Ferguson), Remote
+      details: |
+        - Migrated legacy systems to Java 11 and Spring Boot microservices using DDD principles.
+        - Was directed to limit TDD to specified tasks. Complied, while maintaining advocacy for disciplined testing as a standard engineering practice.
+        - Designed and documented RESTful APIs with Swagger/OpenAPI.
+        - Integrated React.js frontend components with TypeScript.
+        - Helped design and implement the schema for the new sales platform.
+        - Mentored engineers and led technical knowledge-sharing initiatives.
+
+    - role: Senior Software Engineer IV
+      time: Oct 2022 - Apr 2023
+      company: Paychex Inc., Remote
+      details: |
+        - Implemented secondary service modules within their existing microservice architecture using Spring Boot and Java 11.
+        - Began every task with a failing unit test (TDD).
+        - Designed RESTful APIs and documented endpoints using Swagger.
+        - Promoted TDD and implemented walking skeleton architecture.
+        - Started the first-ever development guild, which remains active today.
+        - Responsible for enacting better backlog grooming standards.
+
+    - role: Senior Java Lead
+      time: Dec 2019 - Oct 2022
+      company: Blue Cross Blue Shield, Remote
+      details: |
+        - Migrated legacy services to Spring Boot and Node.js.
+        - Despite being directed not to use TDD, continued applying it to complex tasks to ensure reliable, maintainable software.
+        - Built RESTful APIs with Node.js, TypeScript, and Express.js.
+        - Owned Swagger/OpenAPI documentation for the team's REST APIs.
+        - Led AWS-based deployments with EC2, ALB, and DynamoDB.
+        - Established the first-ever development guild.
+        - Built advanced Elasticsearch-driven search functionality.
+
+    - role: Elasticsearch Consultant
+      time: May 2019 - Dec 2019
+      company: Auction Edge, Franklin, TN
+      details: |
+        - Developed an ELK stack for real-time analytics and dashboarding.
+        - Installed and tuned Elasticsearch 6.7.0.
+        - Created GraphQL/React UI.
+        - Served as one of the primary approvers of pull requests.
+
+    - role: Senior Java Lead
+      time: Jun 2018 - Apr 2019
+      company: Audible / Amazon, Newark, NJ
+      details: |
+        - Migrated systems from Oracle to PostgreSQL.
+        - Mandated to begin every task with TDD.
+        - Developed REST APIs with Spring Boot and documented via Swagger.
+        - Built cloud-native microservices leveraging the AWS ecosystem.
+
+    - role: Senior Java Architect
+      time: Jul 2017 - Apr 2018
+      company: Ramsey Solutions, Franklin, TN
+      details: |
+        - Designed Spring Boot RESTful APIs.
+        - Secured services using Spring Security.
+        - Documented all APIs with Swagger.
+        - Mandated to begin every task with TDD, no exceptions. Truly developed the habit and realized the tremendous value of the practice here, establishing an ongoing approach to building strong engineering habits throughout the SDLC.
+
+    - role: Senior Java Engineer
+      time: Jan 2013 - Jun 2017
+      company: BiologiTx, Remote
+      details: |
+        - Created a living donor matching application with GWT.
+        - Implemented RESTful APIs using Spring Boot.
+        - Developed API documentation using Swagger.
+        - Collaborated directly with the CTO on high-stakes feature delivery.
+
+    - role: Senior Java Engineer
+      time: Jan 2010 - Jan 2013
+      company: Maher Terminals, Elizabeth, NJ
+      details: |
+        - Developed Java JEE-based proprietary API extensions for TOS (Navis N4).
+        - Built and optimized PL/SQL database integrations.
+        - Led investigation and adoption of emerging web technologies.
+
+    - role: Software Engineer / Team Lead
+      time: Mar 1998 - Sep 2007
+      company: Maher Terminals, Elizabeth, NJ
+      details: |
+        - Architected OCR and GPS tracking systems in Java and Swing.
+        - Designed JMS-based synchronization for GPS-enabled work queues.
+        - Led a team of 3 developers and maintained enterprise deployments.
+
+skills:
+    title: Skills & Proficiency
+    toolset:
+      - name: Java (4 to 24) & Spring Boot
+        level: 98%
+      - name: Microservices & API Design
+        level: 95%
+      - name: AI / Agentic Systems & ML
+        level: 90%
+      - name: Test Driven Development (TDD) & DDD
+        level: 95%
+      - name: AWS & Cloud Infrastructure
+        level: 85%
+      - name: React.js & Full Stack
+        level: 80%
