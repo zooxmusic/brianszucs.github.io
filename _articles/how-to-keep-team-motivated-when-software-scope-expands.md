@@ -50,7 +50,7 @@ Final Thought:
 When faced with scope expansion, the best companies don't work their employees harder—they work smarter, more strategically, and with integrity.
 
 ---
-bt:Written by: Brian Szucs
+Written by: Brian Szucs
 Senior Backend Java Developer | Java/Spring + Spring AI| Modernizing legacy systems across regulated industries | Writing on architecture, leadership, and meditation
 
 April 12, 2025

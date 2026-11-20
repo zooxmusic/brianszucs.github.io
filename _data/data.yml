@@ -49,7 +49,7 @@ career-profile:
 experiences:
     - role: Senior Backend Java Engineer (Contract)
       time: April 2025 - Present
-      company: TD Securities, Remote
+      company: <img src="assets/img/td.png" width="40"/>TD Securities, Remote
       details: |
         - Lead backend development for event-driven payments using Java 17, Spring Boot 2, Apache Kafka, IBM MQ, and ISO 20022 messaging.
         - Designed messaging pipelines as well as RDBMS schemas and tables.
@@ -59,7 +59,7 @@ experiences:
         - Frequently worked through overlapping changes on shared Git branches, using cherry-picking and branch separation to manage conflicting development work.
         - Emphasized clear, actionable tickets and disciplined backlog grooming to reduce ambiguity during development.
 
-    - role: Independent Engineering Project — Life in TOON (Multi-Agent AI Application)
+    - role: Independent Engineering Project — Life in TOON <br/>(Multi-Agent AI Application)
       time: 2025 - Present
       company: Zooxmusic LLC, Remote
       details: |
@@ -74,7 +74,7 @@ experiences:
 
     - role: Lead Software Engineer
       time: July 2024 - March 2025
-      company: Build.com (Ferguson), Remote
+      company: <img src="assets/img/ferguson.png" width="20"/> Build.com (Ferguson), Remote
       details: |
         - Migrated legacy systems to Java 11 and Spring Boot microservices using DDD principles.
         - Was directed to limit TDD to specified tasks. Complied, while maintaining advocacy for disciplined testing as a standard engineering practice.
@@ -85,7 +85,7 @@ experiences:
 
     - role: Senior Software Engineer IV
       time: Oct 2022 - Apr 2023
-      company: Paychex Inc., Remote
+      company: <img src="assets/img/paychexlogo.png" width="30"/> Paychex Inc., Remote
       details: |
         - Implemented secondary service modules within their existing microservice architecture using Spring Boot and Java 11.
         - Began every task with a failing unit test (TDD).
@@ -96,7 +96,7 @@ experiences:
 
     - role: Senior Java Lead
       time: Dec 2019 - Oct 2022
-      company: Blue Cross Blue Shield, Remote
+      company:  <img src="assets/img/bcbs.png" width="30"/> Blue Cross Blue Shield, Remote
       details: |
         - Migrated legacy services to Spring Boot and Node.js.
         - Despite being directed not to use TDD, continued applying it to complex tasks to ensure reliable, maintainable software.
@@ -108,7 +108,7 @@ experiences:
 
     - role: Elasticsearch Consultant
       time: May 2019 - Dec 2019
-      company: Auction Edge, Franklin, TN
+      company: <img src="assets/img/auctionedge.png" width="30"/> Auction Edge, Franklin, TN
       details: |
         - Developed an ELK stack for real-time analytics and dashboarding.
         - Installed and tuned Elasticsearch 6.7.0.
@@ -117,7 +117,7 @@ experiences:
 
     - role: Senior Java Lead
       time: Jun 2018 - Apr 2019
-      company: Audible / Amazon, Newark, NJ
+      company: <img src="assets/img/audible.png" width="20"/>  Audible / Amazon, Newark, NJ
       details: |
         - Migrated systems from Oracle to PostgreSQL.
         - Mandated to begin every task with TDD.
@@ -126,7 +126,7 @@ experiences:
 
     - role: Senior Java Architect
       time: Jul 2017 - Apr 2018
-      company: Ramsey Solutions, Franklin, TN
+      company: <img src="assets/img/ramsey.png" width="20"/> Ramsey Solutions, Franklin, TN
       details: |
         - Designed Spring Boot RESTful APIs.
         - Secured services using Spring Security.
@@ -135,7 +135,7 @@ experiences:
 
     - role: Senior Java Engineer
       time: Jan 2013 - Jun 2017
-      company: BiologiTx, Remote
+      company: <img src="assets/img/bio.jpg" width="30"/> BiologiTx, Remote
       details: |
         - Created a living donor matching application with GWT.
         - Implemented RESTful APIs using Spring Boot.
@@ -144,7 +144,7 @@ experiences:
 
     - role: Senior Java Engineer
       time: Jan 2010 - Jan 2013
-      company: Maher Terminals, Elizabeth, NJ
+      company: <img src="assets/img/maher.jpg" width="30"/> Maher Terminals, Elizabeth, NJ
       details: |
         - Developed Java JEE-based proprietary API extensions for TOS (Navis N4).
         - Built and optimized PL/SQL database integrations.
@@ -152,7 +152,7 @@ experiences:
 
     - role: Software Engineer / Team Lead
       time: Mar 1998 - Sep 2007
-      company: Maher Terminals, Elizabeth, NJ
+      company: <img src="assets/img/maher.jpg" width="30"/> Maher Terminals, Elizabeth, NJ
       details: |
         - Architected OCR and GPS tracking systems in Java and Swing.
         - Designed JMS-based synchronization for GPS-enabled work queues.
@@ -163,7 +163,7 @@ skills:
     toolset:
       - name: Java (4 to 24) & Spring Boot
         level: 98%
-      - name: Microservices & API Design
+      - name: API Design
         level: 95%
       - name: AI / Agentic Systems & ML
         level: 90%
@@ -171,5 +171,5 @@ skills:
         level: 95%
       - name: AWS & Cloud Infrastructure
         level: 85%
-      - name: React.js & Full Stack
-        level: 80%
+      - name: Design Patterns / Best Practices/ OOD/OOP
+        level: 95%

@@ -1,14 +1,14 @@
 ---
-layout: post
+layout: article
 title:  "Meditation: The Superpower You didn't Know You Had"
-tagline: "A lot of people hear meditation and picture someone surrounded by healing crystals, burning incense, or flipping tarot cards. But strip away the stereotypes, and what are you left with?"
-date:   2021-11-17s 07:09:13 -0500
+tagline: "A lot of people hear meditation and picture someone surrounded by healing crystals, burning incense, or flipping tarot cards.
+ But strip away the stereotypes, and what are you left with?"
+date:   2021-11-17
 categories: meditation 
 author:  Brian Szucs
 image: /assets/img/meditation-sunset.jpg
 ---
 
-<img src="/assets/img/meditation-sunset.jpg" width="600"/>
 
 A lot of people hear meditation and picture someone surrounded by healing crystals, burning incense, or flipping tarot cards.
 But strip away the stereotypes, and what are you left with?
