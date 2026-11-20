@@ -35,16 +35,17 @@ Meditation isn’t just a “nice habit.” It’s a survival skill for the mode
 
 Try this:
 
-	$m   Set 5 minutes today where you sit in silence. No phone, no distractions. Just breathe.
+	  Set 5 minutes today where you sit in silence. No phone, no distractions. Just breathe.
 
-Notice how often your mind craves stimulation. That’s the addiction talking.
+	Notice how often your mind craves stimulation. That’s the addiction talking.
 
-Keep practicing. Every time you sit, you reclaim a little more of your mind.
+	Keep practicing. Every time you sit, you reclaim a little more of your mind.
 
 ---
-Written by: Brian Szucs
-Senior Backend Java Developer | Java/Spring + Spring AI| Modernizing legacy systems across regulated industries | Writing on architecture, leadership, and meditation
+> Written by: Brian Szucs,
+> Senior Backend Java Developer | Java/Spring + Spring AI| Modernizing legacy systems across regulated industries | Writing on architecture, leadership, and meditation
 
-March 12, 2025
+##### March 12, 2025
 ---
+
 #meditation #softwaredevelopment

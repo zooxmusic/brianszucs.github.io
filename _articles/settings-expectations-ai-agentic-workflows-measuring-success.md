@@ -8,7 +8,7 @@ author:  Brian Szucs
 image: /assets/img/ai-agentic-workflows.png
 ---
 
-The difference between adopting AI and knowing how to work with it
+> The difference between adopting AI and knowing how to work with it
 
 🤖 Artificial intelligence is changing software development at a remarkable pace. Organizations are investing in AI platforms, adopting agentic workflows, and incorporating AI into their engineering processes.
 
@@ -382,10 +382,10 @@ The objective isn't to adopt AI as quickly as possible. It's to learn how to use
 🤝 Better collaboration. Better engineering. Better outcomes.
 
 ---
-Written by: Brian Szucs
-Senior Backend Java Developer | Java/Spring + Spring AI| Modernizing legacy systems across regulated industries | Writing on architecture, leadership, and meditation
+> Written by: Brian Szucs,
+> Senior Backend Java Developer | Java/Spring + Spring AI| Modernizing legacy systems across regulated industries | Writing on architecture, leadership, and meditation
 
-April 12, 2025
+##### April 12, 2025
 ---
 
-#sofwaredevelopment #agile #management 
+#sofwaredevelopment #agile #management #AI

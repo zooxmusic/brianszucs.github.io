@@ -37,8 +37,12 @@ you in the now by default, that tension dissolves. Instead of chasing a full and
 All it takes is a half-hour a day toward a completely better you.
 
 ---
-Brian Szucs: Senior Backend Java Developer | Java/Spring + Spring AI| Modernizing legacy systems across regulated industries | Writing o
+> Written by: Brian Szucs,
+> Senior Backend Java Developer | Java/Spring + Spring AI| Modernizing legacy systems across regulated industries | Writing on architecture, leadership, and meditation
+
+##### November 17, 2021
 ---
 
 
 #meditation #focus #problemsolving #deepwork #inthezone #neuroscience #growth
+
