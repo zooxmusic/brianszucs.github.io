@@ -1,0 +1,22 @@
+@media print {
+  /* Hide web-only elements */
+  nav, .download-btn, .articles-section {
+    display: none !important;
+  }
+
+  /* Remove browser default headers/footers and tighten margins */
+  @page {
+    margin: 0.5in;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+  }
+
+  /* Prevent job entries from splitting awkwardly across pages */
+  .experience-item {
+    break-inside: avoid;
+  }
+}
