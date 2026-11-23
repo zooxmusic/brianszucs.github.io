@@ -340,24 +340,27 @@ p {
 }
 
 @media print {
-  /* Hide web-only elements */
-  nav, .download-btn, .articles-section {
-    display: none !important;
+  /* Force the main wrapper to stay in a two-column side-by-side layout */
+  .main-container {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+    max-width: none !important;
   }
 
-  /* Remove browser default headers/footers and tighten margins */
-  @page {
-    margin: 0.5in;
+  /* Main content column on the left */
+  .main-content {
+    width: 68% !important;
+    padding-right: 20px !important;
   }
 
-  body {
-    background: #fff !important;
-    color: #000 !important;
-    font-size: 11pt;
-  }
-
-  /* Prevent job entries from splitting awkwardly across pages */
-  .experience-item {
-    break-inside: avoid;
+  /* Right blue sidebar */
+  .sidebar {
+    width: 32% !important;
+    flex-shrink: 0 !important;
+    /* Forces Chrome/Safari to actually print your blue background color */
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 }
